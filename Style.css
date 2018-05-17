@@ -1,0 +1,34 @@
+progress { 
+	/* Eliminiamo il background rendendolo trasparent */
+	background-color: transparent;
+
+
+	/* Dimensioniamo il progress come un quadrato */
+	width: 50px;
+	height: 50px;
+
+
+	/* Rendiamo il bordo più spesso e rotondo */
+	border: red solid 2px;
+	box-sizing: border-box;
+	border-radius: 50%;
+}
+
+progress::-moz-progress-bar { 
+	/* Eliminiamo il colore di sfondo dell indicatore interno */
+	background-color: transparent;
+
+	/* Diamogli un altezza e una larghezza in percentuale e un bordo rotondo*/
+	width: 70%;
+	height: 70%;
+	border: blue solid 2px;
+	box-sizing: border-box;
+    border-radius: 50%;
+
+    /* Centriamo sfruttando le traslazioni */
+    transform: translateX(7.5px) translateY(7.5px) rotate(45deg);
+
+    /* Eliminiamo un bordo e ruotiamo per dare un effetto di progressione */
+    border-left-color: transparent ;
+
+}
